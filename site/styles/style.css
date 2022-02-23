@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #ffffff;
+}
+
+.nav-bar .nav-bar-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.nav-bar .nav-bar-content ul li {
+    pointer-events: ;
+    list-style: none;
+}
