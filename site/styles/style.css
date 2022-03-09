@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
     --main-bg-color: #ffffff;
+    --nav-bar-clr:rgb(29, 29, 29);
 }
 
 .nav-bar {
@@ -19,7 +21,7 @@
     align-items: center;
     gap: 50px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--nav-bar-clr);
 }
 
 .nav-bar .nav-bar-content ul li {
@@ -28,5 +30,27 @@
 }
 
 .nav-bar .nav-bar-content a {
-    pointer-events: auto;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: 20px 40px;
 }
+
+.nav-bar .nav-bar-content a:hover {
+    background-color: white;
+    color: var(--nav-bar-clr);
+    transition: all 0.250s ease-in-out;
+    
+
+}
+
+
+
+.main-slide{
+    height: 70vh;
+    background-image: url(../pictures/slide_01.jpg);
+    background-size: cover;
+    color: #f6f3ee;
+    overflow: hidden;
+    box-shadow:inset 0px 2px 10px rgba(0, 0, 0, 0.4) ;
+ }
