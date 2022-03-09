@@ -1,29 +1,14 @@
 
-var actualSlide = 1
+var slide = new Array("slide_01.jpg", "slide_02.jpg", "slide_03.jpg", "slide_04.jpg");
+var numero = 0;
 
-function followingSlide() {
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
 
-    if (actualSlide == 1) {
-        actualSlide = 4
-    }
-
-    actualSlide -= 1
-
-    console.log("pictures/slide_0" + actualSlide + ".jpg")
-    document.getElementById("slide").src = "pictures/slide_0" + actualSlide + ".jpg"
-
-}
-
-function previousSlide() {
-
-
-
-    if (actualSlide == 4) {
-        actualSlide = 0
-    }
-    actualSlide += 1
-
-    console.log("pictures/slide_0${actualSlide}.jpg")
-    document.getElementById("slide").src = "pictures/slide_0" + actualSlide + ".jpg"
-
+    console.log("pictures/" + slide[numero])
+    document.getElementById("slide").src = "pictures/" + slide[numero];
 }

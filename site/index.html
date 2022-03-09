@@ -26,11 +26,10 @@
         </div>
     </div>
 
-    <div class="container main-slide">
-
-        <button onclick="followingSlide()"> previous </button>
-        <button onclick="previousSlide()"> next </button>
-
+    <div id="slider">
+        <img src="pictures/slide_01.jpg" alt="La forêt de peupliers" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
     </div>
 
 </body>
