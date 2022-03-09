@@ -8,6 +8,11 @@
     --main-bg-color: #ffffff;
 }
 
+.nav-bar {
+    background-color: rgb(78, 78, 78);
+    color: #ffffff;
+}
+
 .nav-bar .nav-bar-content ul{
     display: flex;
     justify-content: center;
@@ -18,6 +23,10 @@
 }
 
 .nav-bar .nav-bar-content ul li {
-    pointer-events: ;
     list-style: none;
+    
+}
+
+.nav-bar .nav-bar-content a {
+    pointer-events: auto;
 }
